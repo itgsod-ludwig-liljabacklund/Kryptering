@@ -64,7 +64,7 @@ def decrypt (string, offset)
     if object != " "
       object = letterhash[object]
       if object > 25 && alphabet[object+offset] == alphabet[object+offset].upcase #inverted the offset
-        object = 26 + (object - 26)
+        object = 0 + (object - 26)
       elsif object > 51 && alphabet[object+offset] != alphabet[object+offset].upcase #inverted the offset
         object = 26 + (object - 52)
       end
